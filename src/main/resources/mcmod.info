@@ -1,0 +1,16 @@
+[
+{
+  "modid": "chatshortcuts",
+  "name": "Chat Shortcuts",
+  "description": "Client side mod providing chat shortcuts",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["RageGamingPE"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
