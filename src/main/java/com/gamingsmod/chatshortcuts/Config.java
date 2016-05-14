@@ -21,11 +21,11 @@ public class Config
     {
         if (configuration == null) {
             configuration = new Configuration(file);
+            loadConfig();
         }
-        loadConfig();
     }
 
-    public static void loadConfig()
+    private static void loadConfig()
     {
         message1 = configuration.get(Configuration.CATEGORY_GENERAL, "Shortcut 1", "gg").getString();
         message2 = configuration.get(Configuration.CATEGORY_GENERAL, "Shortcut 2", "hf").getString();

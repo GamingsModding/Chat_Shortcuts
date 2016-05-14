@@ -16,6 +16,7 @@ public class ChatShortcuts
     public void preInit(FMLPreInitializationEvent e)
     {
         Config.init(e.getSuggestedConfigurationFile());
+        MinecraftForge.EVENT_BUS.register(new Config());
         ModKeyBindings.registerKeyBindings();
     }
 
@@ -23,6 +24,5 @@ public class ChatShortcuts
     public void init(FMLInitializationEvent e)
     {
         System.out.println("Init");
-        MinecraftForge.EVENT_BUS.register(new Config());
     }
 }
